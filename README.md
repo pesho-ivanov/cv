@@ -12,7 +12,13 @@ sudo apt-get install texlive
 sudo apt-get install texlive-latex-extra
 sudo apt-get install texlive-xetex
 
+Fonts
+-----
+
+The *Fontin* font can be downloaded from http://www.exljbris.com/fontin.html and be placed in ~/.fonts/
+
 Compile
 -------
 
-xelatex *.tex
+xelatex <filename>.tex
+
