@@ -8,9 +8,7 @@ If I remember correctly, I got the initial version of this CV from http://www.cv
 Prerequisites for Ubuntu
 ------------------------
 
-sudo apt-get install texlive
-sudo apt-get install texlive-latex-extra
-sudo apt-get install texlive-xetex
+        sudo apt-get install texlive texlive-latex-extra texlive-xetex
 
 Fonts
 -----
