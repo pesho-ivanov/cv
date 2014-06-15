@@ -35,7 +35,7 @@
 \newcommand{\wide}{\addfontfeature{LetterSpace=3.0}}	%wide letter spacing
 \newcommand{\comment}[1]{\small\textcolor{darkgreen}{\,\,//\,#1}}
 \newcommand{\mydate}[1]{\minorcolor{\textsc{#1}}}
-\newcommand{\bracketcomment}[1]{\small\textit{\minorcolor{(#1)}}}
+\newcommand{\bracketcomment}[1]{{\small\textit{\minorcolor{(#1)}}}}
 
 \hypersetup{
   colorlinks = true,
@@ -116,24 +116,28 @@
   %\textbf{Faculty of Mathematics and Informatics}
 
         \multicolumn{2}{c}{}\\
-        \mydate{Sep 2011 --- Jun 2013}     &  Master degree \bracketcomment{not accredited} in \textbf{Bioinformatics} \comment{I also taugh algorithms to biologists}\\
-	                          &  Yandex School of Data Mining, Moscow, Russia\\
+        \mydate{Sep 2011 --- Jun 2013}      &   Master degree \bracketcomment{not accredited} in \textbf{Bioinformatics}
+                                                \comment{also taugh algorithms to biologists}\\
+	                                    &   Yandex School of Data Mining, Moscow, Russia\\
 	
         \multicolumn{2}{c}{}\\
-        \mydate{Sep 2009 --- Jun 2013}     &  Specialist degree \bracketcomment{equivalent to Master} in \textbf{Applied Mathematics and Informatics}\\
-        \bracketcomment{interrupted by visa issues} & Moscow State University, Russia \comment{more calculus}\\
-                                  %&  Major in Computer vision at \textsc{Graphics \& Media laboratory}\\
-                                  %&  \textbf{Faculty of Computational Mathematics and Cybernetics}\\
+        \mydate{Sep 2009 --- Jun 2013}      &   Specialist degree \bracketcomment{equivalent to Master} in \textbf{Applied Mathematics and Informatics}\\
+        \bracketcomment{interrupted by visa issues} & Moscow State University, Russia
+                                                      \comment{more calculus}\\
+                                            %&  Major in Computer vision at \textsc{Graphics \& Media laboratory}\\
+                                            %&  \textbf{Faculty of Computational Mathematics and Cybernetics}\\
 
 	\multicolumn{2}{c}{}\\
-        \mydate{Sep 2008 --- Jun 2009}     &  Bachelor degree in \textbf{Computer science} \comment{instructor of advanced algorithmics course}\\
-        \bracketcomment{moved in Moscow University} &  %\textbf{Faculty of Mathematics and Informatics},
-        Sofia University, Bulgaria \comment{mainly discrete maths}\\
+        \mydate{Sep 2008 --- Jun 2009}      &   Bachelor degree in \textbf{Computer science}
+                                                \comment{instructor of advanced algorithmics course}\\
+        \bracketcomment{moved to Moscow University} &  Sofia University, Bulgaria \comment{mainly discrete maths}\\
+                                                %\textbf{Faculty of Mathematics and Informatics}, 
         %{\small\textit{after the first year)}} 
 	
 	\multicolumn{2}{c}{}\\
-        \mydate{Sep 2000 --- Jun 2008}     &  Mathematics and Physics class \comment{award for most scientific achievements of his year}\\
-                                  &  Shumen High school of Sciences, Bulgaria\\
+        \mydate{Sep 2000 --- Jun 2008}      &   \textbf{Mathematics and Physics class}
+                                                \comment{award for most scientific achievements of his year}\\
+                                            &   Shumen High school of Sciences, Bulgaria\\
 %\small\textit{
 \end{tabular}
 \par\smallskip
@@ -162,63 +166,88 @@
 \hspace{7mm}{\textit{\minorcolor{\underline{Additional:}}}
 
 \hspace{0mm}\begin{tabular}{r!{\myline}p{14cm}}
-	\mydate{Jan 2011}       &  \textsc{Vision and Machine-learning Research School}, ENS Lyon, France\\
-	\mydate{Jul 2008}       &  \textsc{Russian Summer Informatics Camp}, Sudislavl', Kostroma region, Russia\\
-	\mydate{Aug 2007}       &  \textsc{Physics Camp}, Panitsite region, Bulgaria\\
-	\mydate{2004 --- 2007}   &  \textsc{Summer Research Informatics Camp}, Varna, Bulgaria\\
-	\mydate{2001 --- 2008}   &  \textsc{Mathematics and Informatics Private School ``A\&B''}, Shumen, Bulgaria\\
+	\mydate{Jan 2011}       &   \textsc{Vision and Machine-learning Research School}, ENS Lyon, France\\
+	\mydate{Jul 2008}       &   \textsc{Russian Summer Informatics Camp}, Kostroma, Russia
+                                    \comment{3 weeks of tasks and theory}\\
+	\mydate{Aug 2007}       &   \textsc{Physics Camp}, Panitsite, Bulgaria
+                                    \comment{3 weeks of maths and physics}\\
+	\mydate{2004 --- 2007}  &   \textsc{Summer Research Informatics Camp}, Varna, Bulgaria
+                                    \comment{2-week problem solving}\\
+	\mydate{2001 --- 2008}  &   \textsc{Mathematics and Informatics Private School ``A\&B''}, Shumen, Bulgaria\\
 \end{tabular}
 
 \newpage
 
-%Section: *** Work Experience ***
-\section{Work Experience}
+%Section: *** Internships ***
+\section{Internships}
 \hspace{0mm}\begin{tabular}{r!{\myline}p{14cm}}
         %\multicolumn{2}{c}{}\\
-  \mydate{Nov 2013 ---}      &  High-school \textbf{students trainer} for informatics competitions\comment{sketched an algorithmic textbook}\\
-  \mydate{now} &  \textit{Mathematics and Informatics Private School ``A\&B''}, Shumen, Bulgaria\\ % (\href{http://ab-bg.com/}{ab-bg.com})\\
-
-        \multicolumn{2}{c}{}\\
-        \mydate{Nov 2013 ---}      &  Technical Assistant in online bioinformatics \textbf{\href{https://www.coursera.org/course/bioinformatics}{Coursera}} course \\
-        \mydate{Jan 2014} &  \textit{supervised by Dr. Pavel Pevzner}, University of California, San Diego\\
-
-        \multicolumn{2}{c}{}\\
-        \mydate{Jul 2013 ---}      &  Summer internship on \href{http://bioinf.spbau.ru/spades}{SPAdes} genome open source assembler \comment{\href{http://pesho.info/wp-content/uploads/chimeras-final.pdf}{presentation}}\\
-                 \mydate{Aug 2013} & \comment{proof of concept: used replication bugs to enhence assembly in opensource assembler}\\
-                                   &  \textit{supervised by Dr. Pavel Pevzner}, \href{http://bioinf.spbau.ru/}{\textbf{Algorithmic Biology Lab}}, Petersburg Academic University\\
-
-        \multicolumn{2}{c}{}\\
-	\mydate{Sep 2012 ---}      &  Microbiological models designer\\
-        \mydate{Jun 2013}  &  \textit{supervisor: prof. Konstantin Severinov},  \href{http://www.genebiology.ru/}{Institute of Gene biology}, Russian Academy of Sciences\\
+        \mydate{Jul 2013 ---}       &   Summer internship on \href{http://bioinf.spbau.ru/spades}{SPAdes} open source \textbf{genome assembler}
+                                        \comment{chimera presentation: \href{http://pesho.info/wp-content/uploads/chimeras-final.pdf}{[PDF]}}\\
+        \mydate{Aug 2013}           &   \comment{proof of concept demonstrated: replication bugs to enhance assembly in open source assembler}\\
+                                    &   \textit{supervised by Dr. Pavel Pevzner, \href{http://bioinf.spbau.ru/}{\textbf{Algorithmic Biology Lab}}, St. Petersburg Academic University}\\
 	
         \multicolumn{2}{c}{}\\
-        \mydate{Jul 2012 ---}      &  \textbf{Researcher internship} on verification of probabilistic biological models \comment{\href{https://docs.google.com/document/d/1tNkXLaWY3ooA4MEnrbrL2_DOpOaiTlLoFblwzKFZdy0/edit?usp=sharing}{summary}}\\
-        \mydate{Aug 2012} &  supervised by Prof. Martin Vechev, \href{http://www.srl.inf.ethz.ch/}{Software Reliability Lab}, ETH Zurich\\
+        \mydate{Jul 2012 ---}       &   \textbf{Research internship} on verification of probabilistic biological models\\
+        \mydate{Aug 2012}           &   \comment{proposed my own topics on 1) virus-bacteria interaction and 2) microcin antibiotics: \href{https://docs.google.com/document/d/1tNkXLaWY3ooA4MEnrbrL2_DOpOaiTlLoFblwzKFZdy0/edit?usp=sharing}{[Summary]}}\\
+                                    &   \textit{supervised by Prof. Martin Vechev, \href{http://www.srl.inf.ethz.ch/}{Software Reliability Lab}, ETH Zurich}\\
 	
         \multicolumn{2}{c}{}\\
-        \mydate{Jul 2011 ---}      &  \textbf{\href{http://code.google.com/soc/}{Google Summer of Code}} internship\comment{implemented topological operators on tetrahedral meshes}\\
-        \mydate{Aug 2011}         &  Computational Geometry Algorithms Library (\href{http://www.cgal.org/}{CGAL})\\
+        \mydate{Jul 2011 ---}       &   \textbf{\href{http://code.google.com/soc/}{Google Summer of Code}} internship
+                                        \comment{implemented topological operators on tetrahedral meshes}\\
+        \mydate{Aug 2011}           &   \textit{Computational Geometry Algorithms Library (\href{http://www.cgal.org/}{CGAL})}\\
+\end{tabular}
+
+
+%Section: *** Teaching ***
+\section{Teaching}
+\hspace{0mm}\begin{tabular}{r!{\myline}p{14cm}}
+        %\multicolumn{2}{c}{}\\
+        \mydate{Nov 2013 ---}       &   High-school \textbf{students trainer} for informatics competitions
+                                        \comment{sketched an algorithmic textbook}\\
+        \mydate{now}                &   \textit{Mathematics and Informatics Private School ``A\&B''}, Shumen, Bulgaria\\ % NA http://ab-bg.com/
+
+        \multicolumn{2}{c}{}\\
+        \mydate{Nov 2013 ---}       &   Technical Assistant in a \textit{Coursera} \textbf{\href{https://www.coursera.org/course/bioinformatics}{bioinformatics course}}
+                                        \comment{lectures editing, forum explanations}\\
+        \mydate{Jan 2014}           &   \textit{supervised by Dr. Pavel Pevzner}, University of California, San Diego\\
 	
         \multicolumn{2}{c}{}\\
-	\mydate{Aug 2010}         &  \textit{Lecturer at school students informatics camp}\\
-	                          &  \textbf{\href{http://lksh.ru/}{Russian Summer Informatics Camp}}, Saratov\vspace{-5mm}\\
+        \mydate{Aug 2010}           &   Lecturer at school students \textbf{informatics camp}
+                                        \comment{the best informatics camp after studying in it}\\
+                                    &   \textit{\href{http://lksh.ru/}{Russian Summer Informatics Camp}, Saratov}\\
 	
 	\multicolumn{2}{c}{}\\
-	\mydate{Mar 2008 ---}      &  \textit{Assistant in \textsc{``Design and Analysis of Algorithms''} course}\\
-	\mydate{Jun 2009}        &  \textbf{Faculty of mathematics and informatics, Sofia University}, Bulgaria\\
+	\mydate{Mar 2008 ---}       &   Assistant in \textbf{``Design and Analysis of Algorithms''} course
+                                        \comment{had seminars with my own group}\\
+	\mydate{Jun 2009}           &   \textit{Faculty of mathematics and informatics, Sofia University}, Bulgaria\\
+\end{tabular}
+
+
+%Section: *** Other work ***
+\section{Other work}
+\hspace{0mm}\begin{tabular}{r!{\myline}p{14cm}}
+        %\multicolumn{2}{c}{}\\
+	\mydate{Sep 2012 ---}       &   Microbiological models designer
+                                        \comment{design, implementation and analysis}\\
+        \mydate{Jun 2013}           &   \textit{\href{http://www.genebiology.ru/}{Institute of Gene biology}, Russian Academy of Sciences}\\
 
 	\multicolumn{2}{c}{}\\
-	\mydate{Sep 2008 ---}     &  \textit{Jury, organizer, tester and \textit{author} of the problems in}\\
-        \mydate{Jun 2009}        &  \textbf{\href{http://konkurs.musala.com/}{Online programming tournament}}, \textbf{Musala Soft}, Bulgaria\\
+	\mydate{Sep 2008 ---}       &   Jury, organizer, tester and author of the problems in \textbf{\href{http://konkurs.musala.com/}{Online programming tournament}}\\
+        \mydate{Jun 2009}           &   \textit{Musala Soft, Bulgaria}
+                                        \comment{mainly discrete optimization problems}\\
 
 	\multicolumn{2}{c}{}\\
-	\mydate{Sep 2008 ---}     &  \textit{Author of problems in all} \textsc{Bulgarian Tournaments in Informatics}\\
-	\mydate{Jun 2009}        &  \textit{Lecturer in the} \textsc{National Informatics Camps}\\
-                                  &  \textbf{National Committee in Informatics}, \textbf{Bulgarian Ministry of Education}\\
+	\mydate{Sep 2008 ---}       &   Author of problems in all \textbf{Bulgarian Tournaments in Informatics}
+                                        \comment{4 such competitions}\\
+	\mydate{Jun 2009}           &   Lecturer in the \textbf{National Informatics Camps}
+                                        \comment{3 such camps}\\
+                                    &   \textit{National Committee in Informatics, Bulgarian Ministry of Education}\\
 
 	\multicolumn{2}{c}{}\\
-	\mydate{Jul 2007 ---}     &  \textit{Developer of a bin-packing genetic algorithm for glass cutting optimization}\\
-        \mydate{Sep 2007}        &  \textbf{\href{http://telepol.net/telepol.net/}{Telepol Net}}, Bulgaria \comment{my first algorithm in production}\\
+        \mydate{Jul 2007 ---}       &   Developer of a bin-packing \textbf{genetic algorithm} for glass cutting optimization\\
+        \mydate{Sep 2007}           &   \textit{\href{http://telepol.net/telepol.net/}{Telepol Net}, Bulgaria}
+                                        \comment{appreciating evolution and first algorithm in production}\\
 	
 \end{tabular}
 %\vspace{0mm}
