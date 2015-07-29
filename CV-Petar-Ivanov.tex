@@ -3,22 +3,22 @@
 \documentclass[a4paper,10pt]{article}
 
 \usepackage{marvosym}
-\usepackage{fontspec} 					%for loading fonts
-\usepackage{xunicode,xltxtra,url,parskip} 		%other packages for formatting
+\usepackage{fontspec}                               % for loading fonts
+\usepackage{xunicode,xltxtra,url,parskip}           % other packages for formatting
 \RequirePackage{color,graphicx}
 \usepackage[usenames,dvipsnames]{xcolor}
-\usepackage{fullpage}                                   % alternative to layaureo
-%\usepackage[big]{layaureo} 				%better formatting of the A4 page
-%\usepackage{fullpage}					%standard margines
-%\usepackage{supertabular} 				%for Grades
-\usepackage{titlesec}					%custom \section
-\usepackage[none]{hyphenat}				%disable any hyphenation
-\usepackage{graphicx}					%photo import
-\usepackage{wrapfig}					%image/text wrapping
-\usepackage{hyperref}					%setup hyperref package, and colours for links
-\usepackage{setspace}					%setup line spacing
-\usepackage{array}					%table lines
-\usepackage{ulem}					%underlining: for big correct underline distance
+\usepackage{fullpage}                               % alternative to layaureo
+%\usepackage[big]{layaureo}                         % better formatting of the A4 page
+%\usepackage{fullpage}                              % standard margines
+%\usepackage{supertabular}                          % for Grades
+\usepackage{titlesec}                               % custom \section
+\usepackage[none]{hyphenat}                         % disable any hyphenation
+\usepackage{graphicx}                               % photo import
+\usepackage{wrapfig}                                % image/text wrapping
+\usepackage{hyperref}                               % setup hyperref package, and colours for links
+\usepackage{setspace}                               % setup line spacing
+\usepackage{array}                                  % table lines
+\usepackage{ulem}                                   % underlining: for big correct underline distance
 
 \setlength{\parskip}{\baselineskip}
 
@@ -29,10 +29,10 @@
 
 \def\name{Petar Ivanov}
 \def\myline{\color{linegray}\vline}
-\def\interestsSpace{\\[1.3mm]}				%wider line spacing
+\def\interestsSpace{\\[1.3mm]}                          % wider line spacing
 
 \newcommand{\minorcolor}[1]{\textcolor{mygray}{#1}}
-\newcommand{\wide}{\addfontfeature{LetterSpace=3.0}}	%wide letter spacing
+\newcommand{\wide}{\addfontfeature{LetterSpace=3.0}}    % wide letter spacing
 \newcommand{\comment}[1]{\small\textcolor{darkgreen}{\,\,//\,#1}}
 \newcommand{\mydate}[1]{\minorcolor{\textsc{#1}}}
 \newcommand{\bracketcomment}[1]{{\small\textit{\minorcolor{(#1)}}}}
@@ -52,7 +52,7 @@
 \setmainfont[SmallCapsFont = Fontin SmallCaps]{Fontin}
 
 %CV Sections
-\titleformat{\section}{\Large\scshape\raggedright}{}{0em}{}[\color{linegray}\titlerule]	% section style
+\titleformat{\section}{\Large\scshape\raggedright}{}{0em}{}[\color{linegray}\titlerule]  % section style
 \titlespacing{\section}{0pt}{15pt}{0pt}
 
 % MARGINES
@@ -63,84 +63,92 @@
 \addtolength{\topmargin}{5mm}
 \addtolength{\textheight}{25mm}
 
-\linespread{1.15}				%line spacing
+\linespread{1.15}                               % line spacing
 
 %--------------------BEGIN DOCUMENT----------------------
 \begin{document}
-\pagestyle{empty}				% non-numbered pages
-\font\fb=''[cmr10]''				%for use with \LaTeX command
+\pagestyle{empty}                               % non-numbered pages
+\font\fb=''[cmr10]''                            % for use with \LaTeX command
 
 % *** Photo ***
-\begin{wrapfigure}{r}{4.5cm}
-	\setlength\fboxsep{0pt}
-	\setlength\fboxrule{0.1pt}
-        %\vspace{-50pt}\fbox{\includegraphics[width=33mm]{PetarIvanov2013.jpg}}
+% \begin{wrapfigure}{r}{4.5cm}
+%         \setlength\fboxsep{0pt}
+%         \setlength\fboxrule{0.1pt}
+%         \vspace{-50pt}\fbox{\includegraphics[width=33mm]{PetarIvanov2013.jpg}}
+% \end{wrapfigure}
+
+\begin{wrapfigure}{r}{5cm}
+          \vspace{-40pt}\includegraphics[width=40mm]{PetarIvanov2015.jpg}
 \end{wrapfigure}
 
-
 % *** Profile ***
-\par{\raggedright\Huge\textbf{\vspace{-3mm}\hspace{0mm}\name}}\\		% big name on the top
+\par{\raggedright\Huge\textbf{\vspace{-3mm}\hspace{0mm}\name}}\\        % big name on the top
 \vspace{-5mm}{\color{linegray}\rule{10.5cm}{0.1mm}}\\
 
 \hspace{4mm}\begin{tabular}{rl}
         \minorcolor{born:} & \textsc{29 May 1989} in Shumen, Bulgaria\\
-	%\minorcolor{address:} & \textsc{14} Georgi Kirkov str., Shumen \textsc{9700}, Bulgaria\\
-	\minorcolor{address:} & Manessestrasse \textsc{64}, Zurich \textsc{8003}, Switzerland\\
-	\minorcolor{email:} & \href{mailto:peter.ivanov89@gmail.com}{peter.ivanov89@gmail.com}\\
-	\minorcolor{site:} & \href{http://pesho.info}{pesho.info}\\
+        % \minorcolor{address:} & \textsc{14} Georgi Kirkov str., Shumen \textsc{9700}, Bulgaria\\
+        \minorcolor{address:} & Manessestrasse \textsc{64}, Zurich \textsc{8003}, Switzerland\\
+        \minorcolor{email:} & \href{mailto:peter.ivanov89@gmail.com}{peter.ivanov89@gmail.com}\\
+        \minorcolor{site:} & \href{http://pesho.info}{pesho.info}\\
 \end{tabular}
 \bigskip
 
 
-%Section: *** Summary ***
+% Section: *** Summary ***
 \section{Summary}
 \begin{center}
   \begin{tabular}{c}
       Bachelor graduate with solid background in algorithms and data structures.\\
-      Winner of multiple programming competitions. Did several research internships.\\
+      Winner of multiple programming competitions. Did Bio\&IT-oriented research internships.\\
       Enjoys teaching and communicating science. Software engineer at Google.\\
     \end{tabular}
 \end{center}
 
 
-%Section: *** Computer Skills ***
+% Section: *** Computer Skills ***
 \section{Skills}
 \begin{tabular}{rp{14cm}}
-  Algorithms:     &  Graphs, Combinatorics, Strings, Geometry, Optimization, Dynamic Programming\\
-  Programming:      &  \textbf{C\,/\,C++ (STL)}, Python (NumPy, SciPy, MatPlotLib), Ruby, MATLAB\\
-  Tools:          &  Unix, Bash, Vim, Git, {\fb \LaTeX}\\ % HTML, CSS,
-  Natural languages:      &  English, Russian, Bulgarian\\
+  Algorithms:         &  Graphs, Combinatorics, Strings, Geometry, Optimization, Dynamic Programming\\
+  Programming:        &  \textbf{C\,/\,C++ (STL)}, Python (NumPy, SciPy, MatPlotLib), Ruby, MATLAB\\
+  Tools:              &  Unix, Bash, Vim, Git, {\fb \LaTeX}\\ % HTML, CSS,
+  Natural languages:  &  English, Russian, Bulgarian\\
 \end{tabular}
- 
 
-%Section: *** Education ***
+
+% Section: *** Education ***
 \section{Education}
 \hspace{-2mm}\begin{tabular}{r!{\myline}p{14cm}}
+  \mydate{Sep 2014 --- Sep 2015 (exp.)}      &   Master degree in \textbf{Software Engineering}, Distance education\\
+                                             &   Shumen University, Bulgaria\\
+
+
+        \multicolumn{2}{c}{}\\
         \mydate{Sep 2009 --- Jun 2013}      &   Specialist degree \bracketcomment{equivalent to Master} in \textbf{Applied Mathematics and Informatics}\\
-        \bracketcomment{interrupted by visa issues} & Moscow State University, Russia
-                                                      \comment{more calculus}\\
+        \bracketcomment{interrupted by visa issues}
+                                            &   Moscow State University, Russia \comment{calculus, Computer vision}\\
+                                            &   \small\textcolor{darkgreen}{\,\,$\downarrow$\,transferred as I could not enter Russia}\\
                                             %&  Major in Computer vision at \textsc{Graphics \& Media laboratory}\\
                                             %&  \textbf{Faculty of Computational Mathematics and Cybernetics}\\
-                                            &   got Bachelor degree in \textbf{Computer Informatics}\\
-                                            &   from Shumen University, Bulgaria in \mydate{2014}
-                                                \comment{could not enter Russia}\\
+        \mydate{Jun 2014}                   &   Got a Bachelor degree in \textbf{Computer Informatics}\\
+                                            &   Shumen University, Bulgaria\\
   %\textbf{Faculty of Mathematics and Informatics}
-	
+
 
         \multicolumn{2}{c}{}\\
         \mydate{Sep 2011 --- Jun 2013}      &   Master degree \bracketcomment{not accredited} in \textbf{Bioinformatics}
                                                 \comment{+ taught algorithms to biologists}\\
-	                                    &   Yandex School of Data Mining, Moscow, Russia\\
+                                            &   Yandex School of Data Mining, Moscow, Russia\\
 
-	\multicolumn{2}{c}{}\\
+        \multicolumn{2}{c}{}\\
         \mydate{Sep 2008 --- Jun 2009}      &   Bachelor degree in \textbf{Computer science}
                                                 \comment{instructor of advanced algorithmics course}\\
         \bracketcomment{moved to Moscow University} &  Sofia University, Bulgaria \comment{mainly discrete maths}\\
-                                                %\textbf{Faculty of Mathematics and Informatics}, 
-        %{\small\textit{after the first year)}} 
-	
-	\multicolumn{2}{c}{}\\
-        \mydate{Sep 2000 --- Jun 2008}      &   \textbf{Mathematics and Physics class}
+                                                %\textbf{Faculty of Mathematics and Informatics},
+        %{\small\textit{after the first year)}}
+
+        \multicolumn{2}{c}{}\\
+        \mydate{Sep 2000 --- Jun 2008}      &   Mathematics and Physics profile
                                                 \comment{award for most scientific achievements of his year}\\
                                             &   Shumen High school of Sciences, Bulgaria\\
 %\small\textit{
@@ -171,39 +179,39 @@
 \hspace{7mm}{\textit{\minorcolor{\underline{Additional:}}}
 
 \hspace{0mm}\begin{tabular}{r!{\myline}p{14cm}}
-	\mydate{Jan 2011}       &   \textsc{Vision and Machine-learning Research School}, ENS Lyon, France\\
-	\mydate{Jul 2008}       &   \textsc{Russian Summer Informatics Camp}, Kostroma, Russia
-                                    \comment{3 weeks of problems and theory}\\
-	\mydate{Aug 2007}       &   \textsc{Physics Camp}, Panitsite, Bulgaria
-                                    \comment{3 weeks of maths and physics}\\
-	\mydate{2004 --- 2007}  &   \textsc{Summer Research Informatics Camp}, Varna, Bulgaria
-                                    \comment{2-week problem solving}\\
-	\mydate{2001 --- 2008}  &   \textsc{Mathematics and Informatics Private School ``A\&B''}, Shumen, Bulgaria\\
+        \mydate{Jan 2011}       &   \textsc{Vision and Machine-learning Research School}, ENS Lyon, France\\
+        \mydate{Jul 2008}       &   \textsc{Russian Summer Informatics Camp}, Kostroma, Russia
+                                            \comment{3 weeks of problems and theory}\\
+        \mydate{Aug 2007}       &   \textsc{Physics Camp}, Panitsite, Bulgaria
+                                            \comment{3 weeks of maths and physics}\\
+        \mydate{2004 --- 2007}  &   \textsc{Summer Research Informatics Camp}, Varna, Bulgaria
+                                            \comment{2-week problem solving}\\
+        \mydate{2001 --- 2008}  &   \textsc{Mathematics and Informatics Private School ``A\&B''}, Shumen, Bulgaria\\
 \end{tabular}
 
 
 \newpage
 
 
-%Section: *** Work ***
-\section{Work}
+% Section: *** Industry ***
+\section{Industry}
 \hspace{0mm}\begin{tabular}{r!{\myline}p{14cm}}
-        %\multicolumn{2}{c}{}\\
-        \mydate{Sep 2014 ---}       &   Software Engineer\\
+        % \multicolumn{2}{c}{}\\
+        \mydate{Sep 2014 ---}       &   Software Engineer at Search $\supset$ Knowledge $\supset$ Infrastructure\\
         \mydate{now}                &   \textit{Google Zurich}\\
 \end{tabular}
 
-%Section: *** Internships ***
+% Section: *** Internships ***
 \section{Internships}
 \hspace{0mm}\begin{tabular}{r!{\myline}p{14cm}}
-        %\multicolumn{2}{c}{}\\
+        % \multicolumn{2}{c}{}\\
         \mydate{Jul 2013 ---}       &   Summer internship on \href{http://bioinf.spbau.ru/spades}{SPAdes} open source \textbf{genome assembler}
                                         \comment{chimera presentation: \href{http://pesho.info/wp-content/uploads/chimeras-final.pdf}{[PDF]}}\\
         \mydate{Aug 2013}           &   \comment{proof of concept demonstrated: replication bugs to enhance assembly in open source assembler}\\
                                     &   \textit{supervised by Dr. Pavel Pevzner, \href{http://bioinf.spbau.ru/}{\textbf{Algorithmic Biology Lab}}, St. Petersburg Academic University}\\
-	
+
         \multicolumn{2}{c}{}\\
-	\mydate{Sep 2012 ---}       &   Microbiological models designer
+        \mydate{Sep 2012 ---}       &   Microbiological models designer
                                         \comment{microcin antibiotic model: \href{https://docs.google.com/document/d/1tNkXLaWY3ooA4MEnrbrL2_DOpOaiTlLoFblwzKFZdy0/edit?usp=sharing}{[Summary]}}\\
         \mydate{Jun 2013}           &   \textit{\href{http://www.genebiology.ru/}{Institute of Gene biology}, Russian Academy of Sciences}\\
 
@@ -211,13 +219,13 @@
         \mydate{Jul 2012 ---}       &   Research internship on probabilistic verification of \textbf{biological models}\\
         \mydate{Aug 2012}           &   \comment{proposed own topic on virus-bacteria interaction: \href{https://docs.google.com/document/d/1tNkXLaWY3ooA4MEnrbrL2_DOpOaiTlLoFblwzKFZdy0/edit?usp=sharing}{[Summary]}}\\
                                     &   \textit{supervised by Prof. Martin Vechev, \href{http://www.srl.inf.ethz.ch/}{Software Reliability Lab}, ETH Zurich}\\
-	
+
         \multicolumn{2}{c}{}\\
         \mydate{Jul 2011 ---}       &   \textbf{Computational Geometry Algorithms Library (\href{http://www.cgal.org/}{CGAL})} internship\\
         \mydate{Aug 2011}           &   \href{http://code.google.com/soc/}{Google Summer of Code}
                                         \comment{implemented topological operators on tetrahedral meshes}\\
 
-	\multicolumn{2}{c}{}\\
+        \multicolumn{2}{c}{}\\
         \mydate{Jul 2007 ---}       &   Developer of a bin-packing \textbf{genetic algorithm} for glass cutting optimization\\
         \mydate{Sep 2007}           &   \textit{\href{http://telepol.net/telepol.net/}{Telepol Net}, Bulgaria}
                                         \comment{appreciating evolution and first algorithm in production}\\
@@ -236,34 +244,34 @@
         \mydate{Nov 2013 ---}       &   Technical Assistant in a \textit{Coursera} \textbf{\href{https://www.coursera.org/course/bioinformatics}{bioinformatics course}}
                                         \comment{lectures editing, forum explanations}\\
         \mydate{Jan 2014}           &   \textit{supervised by Dr. Pavel Pevzner}, University of California, San Diego\\
-	
+
         \multicolumn{2}{c}{}\\
         \mydate{Aug 2010}           &   Lecturer at school students \textbf{informatics camp}
                                         \comment{the best informatics camp}\\
                                     &   \textit{\href{http://lksh.ru/}{Russian Summer Informatics Camp}, Saratov}\\
-	
-	\multicolumn{2}{c}{}\\
-	\mydate{Mar 2008 ---}       &   Assistant in \textbf{``Design and Analysis of Algorithms''} course
-                                        \comment{had seminars with my own group}\\
-	\mydate{Jun 2009}           &   \textit{Faculty of mathematics and informatics, Sofia University}, Bulgaria\\
 
-	\multicolumn{2}{c}{}\\
-	\mydate{Sep 2008 ---}       &   Jury, organizer, tester and author of the problems in \textbf{\href{http://konkurs.musala.com/}{Online programming tournament}}\\
+        \multicolumn{2}{c}{}\\
+        \mydate{Mar 2008 ---}       &   Assistant in \textbf{``Design and Analysis of Algorithms''} course
+                                        \comment{had seminars with my own group}\\
+        \mydate{Jun 2009}           &   \textit{Faculty of mathematics and informatics, Sofia University}, Bulgaria\\
+
+        \multicolumn{2}{c}{}\\
+        \mydate{Sep 2008 ---}       &   Jury, organizer, tester and author of the problems in \textbf{\href{http://konkurs.musala.com/}{Online programming tournament}}\\
         \mydate{Jun 2009}           &   \textit{Musala Soft, Bulgaria}
                                         \comment{mainly discrete optimization problems}\\
 
-	\multicolumn{2}{c}{}\\
-	\mydate{Sep 2008 ---}       &   Author of problems in all \textbf{Bulgarian Tournaments in Informatics}\\
-                                        %\comment{4 such competitions}\\
-	\mydate{Jun 2009}           &   Lecturer in the \textbf{National Informatics Camps}\\
-                                        %\comment{3 such camps}\\
+        \multicolumn{2}{c}{}\\
+        \mydate{Sep 2008 ---}       &   Author of problems in all \textbf{Bulgarian Tournaments in Informatics}\\
+                                        % \comment{4 such competitions}\\
+        \mydate{Jun 2009}           &   Lecturer in the \textbf{National Informatics Camps}\\
+                                        % \comment{3 such camps}\\
                                     &   \textit{National Committee in Informatics, Bulgarian Ministry of Education}\\
 \end{tabular}
 
 
 \newpage
 
-%Section: *** Awards ***
+% Section: *** Awards ***
 \section{Awards}
 \par{\vspace{-9mm}\hspace{7cm}{\minorcolor{\textit{the competitions are National Bulgarian if nothing else stated}}}}\\
 
@@ -279,32 +287,32 @@
 \medskip
 
 \hspace{3mm}\begin{tabular}{@{•\enskip}p{14.5cm}}
-%\setlength{\parindent}{1cm}
-	Awarded as a \textbf{National Laureate in Informatics}, Bulgaria \textsc{'08}\\
+% \setlength{\parindent}{1cm}
+        Awarded as a \textbf{National Laureate in Informatics}, Bulgaria \textsc{'08}\\
         Scholarship for \textbf{science achievements} of \href{http://www.afbulgaria.org/}{\textsc{American Foundation for Bulgaria}} \textsc{'07}---\textsc{'08}\\
-	Participated in the \textbf{final rounds} of the \textsc{Bulgarian Olympiad in Informatics} \textsc{'05}---\textsc{'08}\\
+        Participated in the \textbf{final rounds} of the \textsc{Bulgarian Olympiad in Informatics} \textsc{'05}---\textsc{'08}\\
         Participated in the \textbf{final rounds} of the \href{http://community.topcoder.com/tc?module=Static&d1=tournaments&d2=home}{\textsc{TopCoder High School}}, West Lafayette, USA \textsc{'07}---\textsc{'08}\\
         Participated in the \textbf{final rounds} of ``\href{http://konkurs.musala.com/}{\textsc{Musala Soft and PC Magazine}}'' competition \textsc{'07}---\textsc{'08}\\
-%	Participated in the tournament \textsc{Australian Mathematics Trust}, \textsc{'05}---\textsc{'07}\\
-%	Scholarship for \textit{excellent grades}, \textsc{'06}, \textsc{'07} and \textsc{'08}\\
+        % Participated in the tournament \textsc{Australian Mathematics Trust}, \textsc{'05}---\textsc{'07}\\
+        % Scholarship for \textit{excellent grades}, \textsc{'06}, \textsc{'07} and \textsc{'08}\\
 \end{tabular}
 
-%Section: *** Interests and Activities ***
+% Section: *** Interests and Activities ***
 \section{Activities}
 \hspace{2mm}\begin{tabular}{@{•\enskip}ll}
-%	\setlength{\parindent}{1cm}
+% \setlength{\parindent}{1cm}
         Solves \textbf{algorithmic problems} &
               \comment{\href{http://www.topcoder.com/tc?module=MemberProfile&cr=10205233}{\textsc{TopCoder}}, \href{http://acm.timus.ru/author.aspx?id=30642}{\textsc{Timus}}, \href{http://rosalind.info/users/cheater_no1/}{\textsc{Rosalind}} }\\
-        Contributes to \textbf{open source} projects &
+        Enjoys \textbf{opening the source} &
               \comment{\href{https://github.com/petar-ivanov/}{GitHub profile} }\\
         Founded a project for describing \textbf{educational systems} &
               \comment{\href{http://students-abroad.info/}{students-abroad.info} }\\
-        
-        Loves {\wide hiking, biking, orienteering} and \textbf{running}
-              & \comment{\textbf{42.195km~in~3:43h} --- \href{http://probeg.org/card.php?id=273}{Zelenograd, Russia, Dec 2011} }\\
-              \multicolumn{1}{l}{} & \multicolumn{1}{l}{ \comment{\textbf{100km~in~13:19h} --- \href{http://www.vitosha100km.bg/2011/}{Vitosha mountain, Bulgaria, Jul 2012} } }\\ 
+        Relaxes by {\wide hiking, biking, dancing, paragliding and running}
+              & \comment{\textbf{42.195km~in~3:43h}, \href{http://probeg.org/card.php?id=273}{Zelenograd, Russia, Dec 2011} }\\
+              \multicolumn{1}{l}{} & \multicolumn{1}{l}{ \comment{\textbf{100km~in~13:19h}, \href{http://www.vitosha100km.bg/2011/}{Vitosha mountain, Bulgaria, 2012} } }\\
 
-    % Scientifically interested in \textsc{Computer Vision, Computational Geometry, Bioinformatics, Machine Learning, Genetic Algorithms}\interestsSpace	
+    % CouchSerfing, donating blood, travelling
+    % Scientifically interested in \textsc{Computer Vision, Computational Geometry, Bioinformatics, Machine Learning, Genetic Algorithms}\interestsSpace
     %Being impressed by Bioinformatics, Synthetic biology, Combinatorial Optimization, Computer Vision, Computational Geometry, Genetics, Machine Learning, Robotics\interestsSpace
     % \href{https://opensnp.org/users/637}{\textsc{genotype}})\interestsSpace
     % including my own \href{http://pesho.info/category/msu}{\textsc{blog}} about Moscow State University\interestsSpace
