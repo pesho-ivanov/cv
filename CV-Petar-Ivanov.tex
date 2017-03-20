@@ -36,6 +36,7 @@
 \newcommand{\comment}[1]{\small\textcolor{darkgreen}{\,\,//\,#1}}
 \newcommand{\mydate}[1]{\minorcolor{\textsc{#1}}}
 \newcommand{\bracketcomment}[1]{{\small\textit{\minorcolor{(#1)}}}}
+\newcommand{\mysect}[2]{\vbox{\section{#1}{#2}}}
 
 \hypersetup{
   colorlinks = true,
@@ -96,38 +97,41 @@
 
 
 % Section: *** Summary ***
-\section{Summary}
+\mysect{Summary}{
 \begin{center}
   \begin{tabular}{c}
       Graduate with solid background in algorithms and data structures.\\
       Winner of programming competitions. Did multiple Bio\&IT research internships.\\
-      Loves teaching and communicating science. Software engineer at Google.\\
+      Loves teaching and communicating science. Worked as a Software engineer at Google.\\
     \end{tabular}
 \end{center}
+}  % end of Summary
 
 
 % Section: *** Computer Skills ***
-\section{Skills}
+\mysect{Skills}{
 \begin{tabular}{rp{14cm}}
   Algorithms:     &  Graphs, Combinatorics, Strings, Geometry, Optimization, Dynamic Programming\\
   Programming:    &  \textbf{C\,/\,C++ (STL)}, Python (NumPy, SciPy, MatPlotLib), Ruby, MATLAB\\
   Tools:          &  Unix, Bash, Vim, Git, {\fb \LaTeX}\\ % HTML, CSS,
   Speaks:         &  English, Russian, Bulgarian\\
 \end{tabular}
+}  % end of Skills
 
 
 % Section: *** Education ***
-\section{Education}
+\mysect{Education}{
 \hspace{-2mm}\begin{tabular}{r!{\myline}p{14cm}}
-  \mydate{Sep 2014 --- Sep 2015 (exp.)}      &   Master degree in \textbf{Software Engineering}, Distance education\\
-                                             &   Shumen University, Bulgaria\\
+        \mydate{Apr 2015 --- Feb 2017}      &   Master degree in \textbf{Software Engineering} \bracketcomment{extra-mural} \\
+                                            &   Thesis: \textit{Framework for Genomic Reconstruction Algorithms}\\
+                                            &   Shumen University, Bulgaria\\
 
 
         \multicolumn{2}{c}{}\\
         \mydate{Sep 2009 --- Jun 2013}      &   Specialist degree \bracketcomment{equivalent to Master} in \textbf{Applied Mathematics and Informatics}\\
         \bracketcomment{interrupted by visa issues}
                                             &   Moscow State University, Russia \comment{calculus, Computer vision}\\
-                                            &   \small\textcolor{darkgreen}{\,\,$\downarrow$\,transferred as I could not enter Russia}\\
+                                            &   \small\textcolor{darkgreen}{\,\,$\downarrow$\,transferred because of an administrative ban to enter Russia}\\
                                             %&  Major in Computer vision at \textsc{Graphics \& Media laboratory}\\
                                             %&  \textbf{Faculty of Computational Mathematics and Cybernetics}\\
         \mydate{Jun 2014}                   &   Got a Bachelor degree in \textbf{Computer Informatics}\\
@@ -135,10 +139,10 @@
   %\textbf{Faculty of Mathematics and Informatics}
 
 
-        \multicolumn{2}{c}{}\\
-        \mydate{Sep 2011 --- Jun 2013}      &   Master degree \bracketcomment{not accredited} in \textbf{Bioinformatics}
-                                                \comment{+ taught algorithms to biologists}\\
-                                            &   Yandex School of Data Mining, Moscow, Russia\\
+%        \multicolumn{2}{c}{}\\
+%        \mydate{Sep 2011 --- Jun 2013}      &   Master degree \bracketcomment{not accredited} in \textbf{Bioinformatics}
+%                                                \comment{+ taught algorithms to biologists}\\
+%                                            &   Yandex School of Data Mining, Moscow, Russia\\
 
         \multicolumn{2}{c}{}\\
         \mydate{Sep 2008 --- Jun 2009}      &   Bachelor degree in \textbf{Computer science}
@@ -147,12 +151,13 @@
                                                 %\textbf{Faculty of Mathematics and Informatics},
         %{\small\textit{after the first year)}}
 
-        \multicolumn{2}{c}{}\\
+       \multicolumn{2}{c}{}\\
         \mydate{Sep 2000 --- Jun 2008}      &   Mathematics and Physics profile
                                                 \comment{award for most scientific achievements of his year}\\
                                             &   Shumen High school of Sciences, Bulgaria\\
 %\small\textit{
 \end{tabular}
+}  % end of Education
 \par\smallskip
 
 %\hspace{7mm}\textit{\minorcolor{\underline{Core courses passed:}}}
@@ -179,6 +184,9 @@
 \hspace{7mm}{\textit{\minorcolor{\underline{Additional:}}}
 
 \hspace{0mm}\begin{tabular}{r!{\myline}p{14cm}}
+        \mydate{Sep 2011 --- Jun 2013}      &   Master degree \bracketcomment{not accredited} in \textbf{Bioinformatics}
+                                                \comment{+ taught algorithms to biologists}\\
+                                            &   \hspace{5mm} Yandex School of Data Mining, Moscow, Russia\\
         \mydate{Jan 2011}       &   \textsc{Vision and Machine-learning Research School}, ENS Lyon, France\\
         \mydate{Jul 2008}       &   \textsc{Russian Summer Informatics Camp}, Kostroma, Russia
                                             \comment{3 weeks of problems and theory}\\
@@ -194,17 +202,24 @@
 
 
 % Section: *** Industry ***
-\section{Industry}
+\mysect{Industry}{
 \hspace{0mm}\begin{tabular}{r!{\myline}p{14cm}}
         % \multicolumn{2}{c}{}\\
         \mydate{Sep 2014 ---}       &   Software Engineer at Search $\supset$ Knowledge $\supset$ Infrastructure\\
-        \mydate{now}                &   \textit{Google Zurich} \comment{big data, messy pipelines and loads of code}\\
+        \mydate{now}                &   \textit{Google Zurich} \comment{big data and pipelines}\\
 \end{tabular}
+}  % end of Industry
 
 % Section: *** Internships ***
-\section{Internships}
+\mysect{Internships}{
 \hspace{0mm}\begin{tabular}{r!{\myline}p{14cm}}
         % \multicolumn{2}{c}{}\\
+        \mydate{Jun 2016 ---}       &   Internship on modern biotech technologies\\
+        \mydate{Now}                &   \comment{Genome assemblers, Single-cell transriptomics, T-cell receptor reconstruction, Machine learning}\\
+                                    &   \textit{supervised by Prof. Martin Vechev, \href{http://www.srl.inf.ethz.ch/}{Software Reliability Lab}, ETH Zurich}\\
+                                    &   \textit{collaborating with PD Dr. Emmanuella Guenova, \href{http://www.dermatologie.usz.ch/forschung/Seiten/forschungsgruppen.aspx}{Dermatology Clinic}, University of Zurich}\\
+
+        \multicolumn{2}{c}{}\\
         \mydate{Jul 2013 ---}       &   Summer internship on \href{http://bioinf.spbau.ru/spades}{SPAdes} open source genome assembler
                                         \comment{\href{http://pesho.info/wp-content/uploads/chimeras-final.pdf}{chimeras presentation}}\\
         \mydate{Aug 2013}           &   \comment{proof of concept: replication bugs to enhance assembly in open source assembler}\\
@@ -230,10 +245,11 @@
         \mydate{Sep 2007}           &   \textit{\href{http://telepol.net/telepol.net/}{Telepol Net}, Bulgaria}
                                         \comment{appreciating evolution and first algorithm in production}\\
 \end{tabular}
+}  % end of Internships
 
 
 %Section: *** Teaching ***
-\section{Teaching}
+\mysect{Teaching}{
 \hspace{0mm}\begin{tabular}{r!{\myline}p{14cm}}
         %\multicolumn{2}{c}{}\\
         \mydate{Sep 2015 (exp.)}    &   Supervisor of high school students
@@ -272,12 +288,12 @@
                                         % \comment{3 such camps}\\
         \mydate{2013 --- 2014}      &   \textit{National Committee in Informatics, Bulgarian Ministry of Education}\\
 \end{tabular}
-
+}  % end of Teaching
 
 \newpage
 
 % Section: *** Awards ***
-\section{Awards}
+\mysect{Awards}{
 \par{\vspace{-9mm}\hspace{7cm}{\minorcolor{\textit{the competitions are National Bulgarian if nothing else stated}}}}\\
 
 \vspace{-3mm}\hspace{3.5mm}\begin{tabular}{r!{\myline}p{14cm}}
@@ -296,23 +312,25 @@
         Awarded as a \textbf{National Laureate in Informatics}, Bulgaria \textsc{'08}\\
         Scholarship for \textbf{science achievements} of \href{http://www.afbulgaria.org/}{\textsc{American Foundation for Bulgaria}} \textsc{'07}---\textsc{'08}\\
         Participated in the \textbf{final rounds} of the \textsc{Bulgarian Olympiad in Informatics} \textsc{'05}---\textsc{'08}\\
-        Participated in the \textbf{final rounds} of the \href{http://community.topcoder.com/tc?module=Static&d1=tournaments&d2=home}{\textsc{TopCoder High School}}, West Lafayette, USA \textsc{'07}---\textsc{'08}\\
+        Participated in the \textbf{final rounds} of the \href{http://community.topcoder.com/tc?module=Static\&d1=tournaments\&d2=home}{\textsc{TopCoder High School}}, West Lafayette, USA \textsc{'07}---\textsc{'08}\\
         Participated in the \textbf{final rounds} of ``\href{http://konkurs.musala.com/}{\textsc{Musala Soft and PC Magazine}}'' competition \textsc{'07}---\textsc{'08}\\
         % Participated in the tournament \textsc{Australian Mathematics Trust}, \textsc{'05}---\textsc{'07}\\
         % Scholarship for \textit{excellent grades}, \textsc{'06}, \textsc{'07} and \textsc{'08}\\
 \end{tabular}
+}  % end of Awards
 
 % Section: *** Activities ***
-\section{Activities \,\textbf{:")}}
+%\section{Activities \,\textbf{:")}}
+\mysect{Activities}{
 \hspace{2mm}\begin{tabular}{@{•\enskip}ll}
 % \setlength{\parindent}{1cm}
-        Solves algorithmic problems &
+        Solving algorithmic problems &
               \comment{\href{http://www.topcoder.com/tc?module=MemberProfile&cr=10205233}{\textsc{TopCoder}}, \href{http://acm.timus.ru/author.aspx?id=30642}{\textsc{Timus}}, \href{http://rosalind.info/users/cheater_no1/}{\textsc{Rosalind}} }\\
-        Opens the source &
+        Supporting open-source &
               \comment{\href{https://github.com/petar-ivanov/}{GitHub profile} }\\
         Founded a project for describing educational systems &
               \comment{\href{http://students-abroad.info/}{students-abroad.info} }\\
-        Enjoys {\wide hiking, biking, dancing, paragliding and running}
+        Enjoying {\wide hiking, biking, dancing, paragliding and running}
               & \comment{\textbf{42.195km~in~3:43h}, \href{http://probeg.org/card.php?id=273}{Zelenograd, Russia, Dec 2011} }\\
               \multicolumn{1}{l}{} & \multicolumn{1}{l}{ \comment{\textbf{100km~in~13:19h}, \href{http://www.vitosha100km.bg/2011/}{Vitosha mountain, Bulgaria, 2012} } }\\
 
@@ -323,5 +341,6 @@
     % including my own \href{http://pesho.info/category/msu}{\textsc{blog}} about Moscow State University\interestsSpace
     % Practising traditional Bulgarian dances and classical ballroom dances.\interestsSpace
 \end{tabular}
+}  % end of Activities
 
 \end{document}
