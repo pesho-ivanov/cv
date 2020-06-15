@@ -3,12 +3,13 @@ cv
 
 Curriculum vitae
 
-If I remember correctly, I got the initial version of this CV from http://www.cv-templates.info/ in 2009.
+Latex fork from http://www.cv-templates.info/.
 
-Prerequisites for Ubuntu
-------------------------
+Font Fontin
+-----------
 
-        sudo apt-get install texlive texlive-latex-extra texlive-xetex
+Ubuntu: sudo apt-get install texlive texlive-latex-extra texlive-xetex
+Arch: ttf-exljbris
 
 Fonts
 -----
@@ -18,5 +19,5 @@ The *Fontin* font can be downloaded from http://www.exljbris.com/fontin.html and
 Compile
 -------
 
-xelatex <filename>.tex
+```xelatex <filename>.tex```
 
