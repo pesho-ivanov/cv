@@ -2,3 +2,6 @@
 *.out
 *.aux
 CV-Petar-Ivanov.tex
+CV-Petar-Ivanov.fdb_latexmk
+.gitignore
+CV-Petar-Ivanov.fls
